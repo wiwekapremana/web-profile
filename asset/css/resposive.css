@@ -1,0 +1,145 @@
+/* Media Query untuk mengatur Responsibilitas */
+
+@media (max-width: 1104px) {
+    .sejarah .sejarah-content .left img {
+        height: 100%;
+        width: 250px;
+    }
+    .wisata .wisata-content .right img {
+        height: 100%;
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+        color: #fff;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+        color: #fff;
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        right: -100%;
+        top: 0;
+        background: #22577A;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        right: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .beranda .content-beranda .title-home {
+        font-size: 45px;
+        margin-left: -70px;
+    }
+    .beranda .content-beranda .title-home2 {
+        font-size: 55px;
+        margin-left: -70px
+    }
+    .beranda .content-beranda a {
+        font-size: 20px;
+        padding: 10px 30px;
+        margin-left: -70px;
+    }
+    .max-width {
+        max-width: 930px;
+    }
+    .sejarah .sejarah-content .column {
+        width: 100%;
+    }
+    .sejarah .sejarah-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .sejarah .sejarah-content .right {
+        flex: 100%;
+    }
+    .wisata .wisata-content .column,
+    .kontak .kontak-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    aside {
+        display: flex;
+        margin: auto;
+    }
+}
+
+@media (max-width: 790px) {
+    .max-width {
+        padding: 0 18px;
+    }
+    .beranda .content-beranda .title-home {
+        font-size: 35px;
+    }
+    .beranda .content-beranda .title-home2 {
+        font-size: 50px;
+    }
+    .beranda .content-beranda a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .beranda .content-beranda .title-home {
+        font-size: 45px;
+    }
+    .beranda .content-beranda .title-home2 {
+        font-size: 60px;
+    }
+    .beranda .content-beranda a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .beranda .content-beranda .title-home {
+        font-size: 30px;
+    }
+    .beranda .content-beranda .title-home2 {
+        font-size: 50px;
+    }
+    .beranda .content-beranda a {
+        font-size: 20px;
+    }
+    .sejarah .sejarah-content .right .text,
+    .wisata .wisata-content .left .text {
+        font-size: 19px;
+    }
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}

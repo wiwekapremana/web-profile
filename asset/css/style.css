@@ -1,0 +1,362 @@
+/* import google font menggunakan googleapis */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* implementasi font family */
+
+.sejarah,
+.wisata,
+.kontak,
+footer {
+    font-family: 'Fredoka One', cursive;
+}
+
+
+/* Style untuk bagian Navbar dan menu */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 40px 20px;
+    transition: all 0.3s ease;
+    font-family: 'Fredoka One', cursive;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .badung a {
+    color: #030303;
+    font-size: 40px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .badung a:hover {
+    color: #fff;
+}
+
+.navbar .menu li a:hover {
+    color: #ffffff;
+}
+
+.menu-btn {
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn.sticky {
+    color: #fff;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    color: #38A3A5;
+    box-shadow: 0 0 5px 0 #fff;
+    background: none;
+}
+
+
+/* navbar sticky */
+
+header .sticky {
+    padding: 10px 0;
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 1px 10px #e2e2e2;
+    z-index: 999;
+}
+
+.navbar.sticky .badung a {
+    color: #ffffff;
+}
+
+.navbar.sticky .badung a:hover {
+    color: #ee6408;
+}
+
+.navbar.sticky li a {
+    color: #ffffff;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #ee6408;
+}
+
+
+/* Style untuk mengatur element Article */
+
+article {
+    padding: 100px 0;
+}
+
+.max-width {
+    max-width: 1400px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.sejarah .sejarah-content,
+.wisata .wisata-content,
+.kontak .kontak-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sejarah .sejarah-content,
+.wisata .wisata-content,
+.kontak .kontak-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article .title,
+article .title-3 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #050505;
+    font-family: 'Fredoka One', cursive;
+}
+
+article .title-2 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+/* Style untuk beranda */
+
+.beranda {
+    background: url("/data1/images/beranda.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Fredoka One', cursive;
+}
+
+.beranda .max-width {
+    width: 100%;
+    display: flex;
+}
+
+.beranda .max-width .row {
+    margin-right: 0;
+}
+
+.beranda .content-beranda {
+    margin: 150px;
+    margin-top: 170px;
+}
+
+.beranda .content-beranda .title-home {
+    color: #030303;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.beranda .content-beranda .title-home2 {
+    color: #030303;
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.beranda .content-beranda a {
+    display: inline-block;
+    background: #ffff;
+    color: #030303;
+    font-size: 25px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #151e24;
+    transition: all 0.3s ease;
+}
+
+.beranda .content-beranda a:hover {
+    color: #ffff;
+    background: none;
+}
+
+
+/* style pada article sejarah dan wisata */
+
+.sejarah {
+    color: #0f0f0f;
+    background: #fcfcfc;
+}
+
+.sejarah .sejarah-content .right p {
+    text-align: justify;
+}
+
+.sejarah .sejarah-content .left img {
+    width: 560px;
+    height: 380px;
+    transition: all 0.3s ease;
+}
+
+.sejarah .sejarah-content .left img:hover {
+    transform: scale(1.05);
+}
+
+.wisata {
+    color: #fff;
+    background: #0f0f0f;
+}
+
+.sejarah .sejarah-content .column,
+.wisata .wisata-content .column {
+    width: calc(50% - 60px);
+    margin-bottom: 10px;
+}
+
+.wisata .wisata-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.wisata .wisata-content .left p {
+    text-align: justify;
+    line-height: 40px;
+}
+
+
+/* style pada element article kontak */
+
+
+/* style pada bagian kontak*/
+
+.kontak {
+    background: #009688;
+    background-size: cover;
+}
+
+.kontak .kontak-content .column {
+    width: calc(50% - 30px);
+}
+
+.kontak .kontak-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.kontak .kontak-content .left p {
+    text-align: justify;
+    line-height: 40px;
+}
+
+.kontak .kontak-content .left .icons {
+    margin: 20px 0;
+}
+
+.kontak .kontak-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.kontak .kontak-content .row .info {
+    margin-left: 30px;
+}
+
+.kontak .kontak-content .row i {
+    font-size: 25px;
+    color: #000000;
+}
+
+.kontak .kontak-content .info .head {
+    font-weight: 500;
+}
+
+.kontak .kontak-content .info .sub-title {
+    color: #000000;
+}
+
+.profil {
+    padding: 15px 25px 15px 25px;
+    border: 2px solid #22577A;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+aside :hover {
+    transform: scale(1.05);
+}
+
+.profil header {
+    text-align: center;
+}
+
+.profil-img {
+    width: 150px;
+    height: 100%;
+}
+
+.profil .row-profil {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.profil .row-profil .info {
+    margin-left: 0px;
+}
+
+.profil .row-profil .info .head {
+    font-weight: 600;
+}
+
+footer {
+    height: 5vh;
+}
